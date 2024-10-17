@@ -21,11 +21,11 @@ outputs:
 runs:
   using: composite
   steps:
-    - uses: suzuki-shunsuke/tfaction/get-target-config@pr/1
+    - uses: ponkio-o/tfaction/get-target-config@pr/1
       id: target-config
-    - uses: suzuki-shunsuke/tfaction/get-global-config@pr/1
+    - uses: ponkio-o/tfaction/get-global-config@pr/1
       id: global-config
-    - uses: suzuki-shunsuke/tfaction/check-terraform-skip@pr/1
+    - uses: ponkio-o/tfaction/check-terraform-skip@pr/1
       id: check-terraform-skip
       with:
         labels: ${{ env.CI_INFO_TEMP_DIR }}/labels.txt

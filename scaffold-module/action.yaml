@@ -42,7 +42,7 @@ runs:
         fi
       shell: bash
 
-    - uses: suzuki-shunsuke/tfaction/get-global-config@pr/1
+    - uses: ponkio-o/tfaction/get-global-config@pr/1
       id: global-config
 
     - run: |

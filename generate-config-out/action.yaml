@@ -16,7 +16,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: suzuki-shunsuke/tfaction/get-target-config@pr/1
+    - uses: ponkio-o/tfaction/get-target-config@pr/1
       id: target-config
 
     - name: Run terraform plan -generate-config-out
